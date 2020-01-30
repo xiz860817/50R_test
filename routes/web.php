@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('/member','MemberlistController');
+Route::resource('50R_Salary/public/member','MemberlistController');
