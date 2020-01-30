@@ -18,7 +18,7 @@ class MemberlistController extends Controller
      */
     public function index()
     {
-        $customers = DB::select('select * from lists');
+        $lists = DB::select('select * from lists');
         //
         return View::make('lists',['lists' => $lists]);
     }
