@@ -1,14 +1,22 @@
-<nav class="navbar navbar-expand-lg navbar-light navbar-default">
-  <div class="container">
-    <a href="{{ url('/') }}" class="navbar-brand">
-      回首頁
-    </a>
-    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a href="{{ action('MemberlistController@index') }}" class="nav-link">
-          客戶列表
-        </a>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">50嵐華夏高鐵店</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="member">員工資料</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">查詢日期</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">調整薪資</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">新增員工資料</a>
+      </li> 
     </ul>
-  </div>
+  </div>  
 </nav>
