@@ -34,8 +34,20 @@
   </div>  
 </nav>
 <br>
+<div class="row justify-content-center">
+    <div class="col-md-10">
+      <div class="card">
+        <div class="card-header">員工資料</div>
+        <div class="card-body p-1">
+          <table class="table table-hover m-0">
+            <h3>好康報報</h3>
 
-<div class="Introduction">
+          </table>
+        </div>  
+      </div>
+    </div>
+  </div>
+
   <h3>好康報報</h3>
   <div style="text-align:center;"><h4>來電、自取買五送一</h4></div>
   <div style="text-align:center;"><h4>消費滿100，樂情外送</h4></div>
