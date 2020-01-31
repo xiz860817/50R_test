@@ -1,10 +1,10 @@
 @extends('layouts.master')
-@section('title','客戶列表')
+@section('title','員工資料')
 @section('content')
   <div class="row justify-content-center">
     <div class="col-md-10">
       <div class="card">
-        <div class="card-header">客戶列表</div>
+        <div class="card-header">員工資料</div>
         <div class="card-body p-1">
           <table class="table table-hover m-0">
             <thead class="thead-darty">

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>50嵐華夏高鐵店</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -22,7 +22,7 @@
         <a class="nav-link" href="member">員工資料</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">查詢薪資</a>
+        <a class="nav-link" href="#">查詢日期</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">調整薪資</a>
