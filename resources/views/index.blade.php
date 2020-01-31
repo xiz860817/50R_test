@@ -35,7 +35,7 @@
 </nav>
 <br>
 <div class="row justify-content-center">
-    <div class="col-md-10">
+    <div class="col-md-8">
       <div class="card">
         <div class="card-header"><h3>好康報報</h3></div>
         <div class="card-body p-1">
