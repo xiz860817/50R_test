@@ -9,7 +9,7 @@
         <a class="nav-link" href="member">員工資料</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">查詢日期</a>
+        <a class="nav-link" href="data">查詢日期</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">調整薪資</a>

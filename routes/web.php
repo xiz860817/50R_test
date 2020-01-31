@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::resource('member','MemberlistController');
+Route::resource('data','DataController');
