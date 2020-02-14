@@ -15,5 +15,5 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::resource('member','MemberlistController');
-Route::resource('data','DataController');
+Route::resource('employee','EmployeeController');
+Route::resource('date','DateController');
