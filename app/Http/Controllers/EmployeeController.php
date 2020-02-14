@@ -14,8 +14,6 @@ class EmployeeController extends Controller
     //
     public function index(){
         $employees = Employee::all();
-        $gitemp = new Employee;
-        $gitemp->new();
         return View::make('lists',['employees'=>$employees]);
     }
 
