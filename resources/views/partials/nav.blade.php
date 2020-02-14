@@ -6,10 +6,10 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="member">員工資料</a>
+        <a class="nav-link" href="employee"">員工資料</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="data">查詢日期</a>
+        <a class="nav-link" href="date">查詢日期</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">調整薪資</a>
