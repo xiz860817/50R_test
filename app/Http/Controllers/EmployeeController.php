@@ -17,7 +17,7 @@ class EmployeeController extends Controller
         echo $emp;
         $f = new Employee;
         echo $f;
-        echo $f->hourlypay;
+        echo $f->hourlypay();
         //$h = Employee::find(1)->hourlypay;
 	    //return $h;
         /*$employees = Employee::all();
