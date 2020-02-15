@@ -13,8 +13,9 @@ class EmployeeController extends Controller
 {
     //
     public function index(){
-	$h = Employee::find(1)->hourlypay;
-	return $h;
+        $emp = Employee::all();
+        echo $emp;
+        
         //$h = Employee::find(1)->hourlypay;
 	    //return $h;
         /*$employees = Employee::all();
