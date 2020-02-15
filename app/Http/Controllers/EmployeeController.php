@@ -17,8 +17,8 @@ class EmployeeController extends Controller
         foreach ($hourlypays as $hourly){
             echo $hourly->hourlypay;
         }
-        $employees = Employee::all();
-        return View::make('lists',['employees'=>$employees]);
+        /*$employees = Employee::all();
+        return View::make('lists',['employees'=>$employees]);*/
     }
 
 }
