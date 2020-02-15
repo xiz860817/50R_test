@@ -9,8 +9,6 @@ class HourlypayController extends Controller
 {
     //
     public function index(){
-        $pay = new Hourlypay;
-        $pay->Hourlypay = 150;
-        $pay->save();
+        //
     }
 }
