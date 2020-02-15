@@ -17,6 +17,8 @@ class Employee extends Model
         return $this->hasMany(DateEloquent::class,'Empid');
     }
     public function hourlypay(){
+
         return $this->hasMany(HourlypayEloquent::class,'Hourlypay','Hourlypay');
+
     }
 }

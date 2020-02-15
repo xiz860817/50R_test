@@ -13,10 +13,8 @@ class EmployeeController extends Controller
 {
     //
     public function index(){
-        $hourlypays = Employee::find(1)->hourlypay;
-        foreach ($hourlypays as $hourly){
-            echo $hourly->hourlypay;
-        }
+        $h = Employee::find(1)->hourlypay;
+	return $h;
         /*$employees = Employee::all();
         return View::make('lists',['employees'=>$employees]);*/
     }
