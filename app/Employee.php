@@ -19,7 +19,7 @@ class Employee extends Model
     }
     public function hourlypay(){
 
-        return $this->hasOne('App\Hourlypay','id','Empid');
+        return $this->hasMany('App\Hourlypay','id','Empid');
 
     }
 }
