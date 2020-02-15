@@ -18,5 +18,6 @@ class Employee extends Model
     }
     public function hourlypay(){
         return $this->hasMany(HourlypayEloquent::class,'Hourlypay','Hourlypay');
+        123;
     }
 }
