@@ -11,6 +11,6 @@ class HourlypayController extends Controller
     public function index(){
         //
         $h= new Hourlypay;
-        return $h;
+        return $h->Hourlypay;
     }
 }
