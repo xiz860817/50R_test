@@ -16,6 +16,7 @@ class EmployeeController extends Controller
         $emp = Employee::all();
         echo $emp;
         $f = Employee::where('Empid',1)->first();
+        echo $f;
         //$h = Employee::find(1)->hourlypay;
 	    //return $h;
         /*$employees = Employee::all();
