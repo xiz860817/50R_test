@@ -19,7 +19,7 @@ class Employee extends Model
     }*/
     public function hourlypay(){
 
-        return $this->hasOne(EmployeeEloquent::class,'Hourlypay','Hourlypay');
+        return $this->hasOne('App\Employee','Hourlypay','Hourlypay');
         
     }
 }
