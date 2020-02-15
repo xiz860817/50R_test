@@ -10,7 +10,7 @@ class HourlypayController extends Controller
     //
     public function index(){
         //
-        $h = Hourlypay::find(1)->hourlypay;
+        $h= new Hourlypay;
         return $h;
     }
 }
