@@ -13,4 +13,10 @@ class Employee extends Model
     public function user(){
         return $this->belongsTo(UserEloquent::class);
     }*/
+    public function date(){
+        return $this->hasMany(DateEloquent::class,'Empid');
+    }
+    public function hourlypay(){
+        return $this->hasMany(HourlypayEloquent::class,'Hourlypay');
+    }
 }
