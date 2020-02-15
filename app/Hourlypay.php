@@ -9,7 +9,7 @@ class Hourlypay extends Model
     //
     
     protected $table = 'hourlypay';
-    protected $primarykey = 'id';
+    protected $primarykey = 'Empid';
     public $timestamps = false;
     
     public function employee(){
