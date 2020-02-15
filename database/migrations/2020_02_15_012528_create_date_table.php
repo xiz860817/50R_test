@@ -15,7 +15,7 @@ class CreateDateTable extends Migration
     {
         Schema::create('date', function (Blueprint $table) {
             $table->Increments('Empid');
-            $table->dateTime('Date');
+            $table->date('Date');
             #$table->timestamps();
         });
     }
