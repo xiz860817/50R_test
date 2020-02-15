@@ -9,10 +9,10 @@ class Hourlypay extends Model
     //
     
     protected $table = 'hourlypay';
-    protected $primarykey = 'Empid';
+    protected $primarykey = 'id';
     public $timestamps = false;
     
     public function employee(){
-        return $this->belongsTo('App\Employee','Hourlypay','Hourlypay');
+        return $this->belongsTo('App\Employee','Empid','Hourlypay');
     }
 }
