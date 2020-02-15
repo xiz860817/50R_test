@@ -14,7 +14,7 @@ class CreateEmployeeTable extends Migration
     public function up()
     {
         Schema::create('employee', function (Blueprint $table) {
-            $table->Increments('Empid')->change();
+            $table->Increments('Empid');
             $table->char('Name',50)->index();
             $table->char('Address',100);
             $table->char('Phone',10)->index();
@@ -22,7 +22,7 @@ class CreateEmployeeTable extends Migration
             #$table->timestamps();
         });
         Schema::table('employee', function ($table) {
-            $table->Increments('id')->change();
+            $table->renameColumn('Empid','id');
         });
     }
 
