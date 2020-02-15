@@ -8,5 +8,6 @@ class Hours extends Model
 {
     //
     protected $table = 'hours';
+    protected $primarykey = 'id';
     public $timestamps = false;
 }
