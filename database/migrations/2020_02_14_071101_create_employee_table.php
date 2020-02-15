@@ -22,7 +22,7 @@ class CreateEmployeeTable extends Migration
             #$table->timestamps();
         });*/
         Schema::table('employee', function ($table) {
-            $table->renameColumn('Empid','id');
+            $table->Increments('id');
         });
     }
 
