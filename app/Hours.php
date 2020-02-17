@@ -11,6 +11,6 @@ class Hours extends Model
     public $timestamps = false;
 
     public function date(){
-        return $this->belongsTo('App\Date');
+        return $this->belongsTo('App\Date','Date');
     }
 }
