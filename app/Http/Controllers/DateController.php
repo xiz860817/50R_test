@@ -11,5 +11,8 @@ class DateController extends Controller
     public function index(){
         $dates = Date::all();
         return $dates;
+
+        $name = Date::find(1);
+        echo $name->employee->Name;
     }
 }

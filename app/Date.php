@@ -9,4 +9,8 @@ class Date extends Model
     //
     protected $table = 'date';
     public $timestamps = false;
+
+    public function employee(){
+        return $this->belongsTo('App\Employee');
+    }
 }
