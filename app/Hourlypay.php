@@ -12,7 +12,7 @@ class Hourlypay extends Model
     protected $primarykey = 'Empid';
     public $timestamps = false;
     
-    public function employee(){
-        return $this->belongsTo('App\Employee');
-    }
+    /*public function employee(){
+        return $this->belongsTo('App\Employee','');
+    }*/
 }
