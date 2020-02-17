@@ -13,13 +13,14 @@ class DateController extends Controller
         echo $dates;
         
         //回找employee的Name
-        $name = Date::find(1);
+        /*$name = Date::find(1);
         echo $name->employee->Name;
-
+        */
         //一對多找時數
         $hour = Date::find(1)->hours;
         foreach ($hour as $hours){
             echo $hours->Hours;
         }
+
     }
 }
