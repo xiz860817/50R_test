@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::resource('employee','EmployeeController');
 Route::resource('date','DateController');
 Route::resource('new','HoursController');
+
+Route::get('edit/{employee_id}','EmployeeController@edit');
+Route::post('edit/{employee_id}', 'EmployeeController@update');
