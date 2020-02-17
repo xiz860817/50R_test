@@ -4,12 +4,18 @@ namespace App\Http\Controllers;
 
 use App\Employee;
 use Illuminate\Http\Request;
+use PhpParser\Node\Expr\Empty_;
 
 class EmployeeController extends Controller
 {
     //
     public function index(){
         $emps = Employee::all();
-        return $emps;
+        echo $emps;
+
+        $date = Employee::find(1)->date;
+        foreach ($date as $dates){
+            echo $dates->Date;
+        }
     }
 }
