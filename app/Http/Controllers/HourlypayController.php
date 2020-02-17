@@ -14,6 +14,7 @@ class HourlypayController extends Controller
         return $h;
 
         $emp = Hourlypay::find(1);
+        echo $emp;
         //取得員工的時數
         echo $emp->employee->Name;
         
