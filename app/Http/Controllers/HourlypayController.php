@@ -11,12 +11,12 @@ class HourlypayController extends Controller
     public function index(){
         //
         $h = Hourlypay::all();
-        return $h;
+        echo $h;
 
-        $emp = Hourlypay::find(1);
-        echo $emp;
+        $hh = Hourlypay::find(2);
+        //echo $hh;
         //取得員工的時數
-        echo $emp->employee->Name;
+        //echo $hh->employee->Phone;
         
     }
 }
