@@ -14,6 +14,7 @@ class Date extends Model
         return $this->belongsTo('App\Employee');
     }
     public function hours(){
+        echo $this->Date;
         return $this->hasMany('App\Hours','date_id',$this->Date);
     }
 }
