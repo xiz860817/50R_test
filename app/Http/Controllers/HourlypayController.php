@@ -11,7 +11,7 @@ class HourlypayController extends Controller
     public function index(){
         //
         $h = Hourlypay::all();
-        return $h;
+        echo $h;
         $s = new Hourlypay;
         $s->hourlypay = 160;
         $s->save();
