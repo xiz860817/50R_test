@@ -13,6 +13,6 @@ class Hourlypay extends Model
     public $timestamps = false;
     
     public function employee(){
-        return $this->belongsTo('App\Employee','id');
+        return $this->belongsTo('App\Employee');
     }
 }
