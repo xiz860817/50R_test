@@ -14,12 +14,15 @@ class EmployeeController extends Controller
     //
     public function index(){
         $emp = Employee::all();
-        echo $emp->id;
+        echo $emp;
         //$f = new Employee;
         //echo $f;
         //echo $f->hourlypay();
         $h = Employee::find(1)->hourlypay;
-	    return $h;
+        foreach($h as $hh){
+            return $hh->Hourlypay;
+        }
+        
         /*$employees = Employee::all();
         return View::make('lists',['employees'=>$employees]);*/
     }
