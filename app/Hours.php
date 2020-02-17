@@ -9,4 +9,8 @@ class Hours extends Model
     //
     protected $table = 'hours';
     public $timestamps = false;
+
+    public function date(){
+        return $this->belongsTo('App\Date');
+    }
 }

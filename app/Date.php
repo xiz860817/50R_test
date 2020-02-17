@@ -13,4 +13,7 @@ class Date extends Model
     public function employee(){
         return $this->belongsTo('App\Employee');
     }
+    public function hours(){
+        return $this->hasMany('App\Hours');
+    }
 }

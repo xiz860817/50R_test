@@ -14,5 +14,10 @@ class DateController extends Controller
 
         $name = Date::find(1);
         echo $name->employee->Name;
+
+        $hour = Date::find(1)->date;
+        foreach ($hour as $hours){
+            echo $hours->Hours;
+        }
     }
 }
