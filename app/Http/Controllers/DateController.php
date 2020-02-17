@@ -12,6 +12,7 @@ class DateController extends Controller
         $date = new Date;
         $date->employee_id = '1';
         $date->Date = '2020-02-17';
+        $date->save();
         $dates = Date::all();
         return $dates;
     }
