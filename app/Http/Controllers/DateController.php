@@ -11,11 +11,13 @@ class DateController extends Controller
     public function index(){
         $dates = Date::all();
         echo $dates;
-
+        
+        //回找employee的Name
         $name = Date::find(1);
         echo $name->employee->Name;
 
-        $hour = Date::find(1)->date;
+        //一對多找時數
+        $hour = Date::find(1)->hours;
         foreach ($hour as $hours){
             echo $hours->Hours;
         }

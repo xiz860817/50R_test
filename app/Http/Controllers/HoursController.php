@@ -10,7 +10,7 @@ class HoursController extends Controller
     //
     public function index(){
         $hours = Hours::all();
-        return $hours;
+        echo $hours;
 
         $empid = Hours::find(1);
         echo $empid->date->employrr_id;
