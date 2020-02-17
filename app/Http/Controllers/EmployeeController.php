@@ -14,6 +14,7 @@ class EmployeeController extends Controller
         echo $emps;
 
         $date = Employee::find(1)->date;
+        echo $date;
         foreach ($date as $dates){
             echo $dates->Date;
         }
