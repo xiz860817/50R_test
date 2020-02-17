@@ -20,6 +20,7 @@ class DateController extends Controller
         //一對多找時數
         $hour = Date::find(1)->hours;
         echo $hour;
+        echo "123";
         foreach ($hour as $hours){
             echo $hours->Hours;
         }
