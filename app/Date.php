@@ -15,6 +15,6 @@ class Date extends Model
     }
     public function hours(){
         echo $this->Date;
-        return $this->hasMany('App\Hours','Date',"'".$this->Date."'");
+        return $this->hasMany('App\Hours','id');
     }
 }
