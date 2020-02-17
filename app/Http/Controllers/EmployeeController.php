@@ -18,7 +18,7 @@ class EmployeeController extends Controller
         //$f = new Employee;
         //echo $f;
         //echo $f->hourlypay();
-        $h = Employee::find(1);
+        $h = Employee::find(1)->hourlypay;
 	    return $h;
         /*$employees = Employee::all();
         return View::make('lists',['employees'=>$employees]);*/
