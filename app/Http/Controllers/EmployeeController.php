@@ -19,6 +19,7 @@ class EmployeeController extends Controller
         //echo $f;
         //echo $f->hourlypay();
         $h = Employee::find(1)->hourlypay;
+        //取得員工的時數
         foreach($h as $hh){
             return $hh->Hourlypay;
         }
