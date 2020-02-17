@@ -13,6 +13,6 @@ class HoursController extends Controller
         echo $hours;
 
         $empid = Hours::find(1);
-        echo $empid->date->employrr_id;
+        echo $empid->date->employee_id;
     }
 }
