@@ -5,6 +5,7 @@ use App\Employee;
 use App\Http\Requests\EditEmployee;
 use Illuminate\Http\Request;
 use PhpParser\Node\Expr\Empty_;
+use View;
 
 class EmployeeController extends Controller
 {
@@ -28,7 +29,7 @@ class EmployeeController extends Controller
         $employees = $request->only('id','Name','Address','Phone','Hourlypay');
         dd($employees);
     }
-    public function update($employee_id,EditEmployee $request){
+    /*public function update($employee_id,EditEmployee $request){
         $employee = EmployeeEloquent::where('employee_id',$employee_id)->firstOrFail();
         $employee->Phone = $request->Phone;
         $employee->save();
@@ -37,5 +38,5 @@ class EmployeeController extends Controller
             'Employee' => $employee,
             'msg' => '修改成功'
         ]);
-    }
+    }*/
 }
