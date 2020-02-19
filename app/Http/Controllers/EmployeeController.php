@@ -29,7 +29,7 @@ class EmployeeController extends Controller
 
     public function store(Request $request){
         $employees = new Employee;
-        #$employees->Cusid=$request->input('Cusid');
+        #$employees->id=$request->input('id');
         $employees->Name=$request->input('Name');
         $employees->Address=$request->input('Address');
         $employees->Phone=$request->input('Phone');
