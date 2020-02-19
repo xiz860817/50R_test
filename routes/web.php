@@ -19,6 +19,7 @@ Route::get('employee','EmployeeController@index');
 Route::get('new', 'EmployeeController@new');
 Route::post('store','EmployeeController@store');
 Route::get('edit','EmployeeController@edit');
+Route::get('update','EmployeeController@update');
 
 Route::resource('date','DateController');
 Route::resource('new1','HoursController');
