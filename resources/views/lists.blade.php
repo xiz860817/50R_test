@@ -29,8 +29,7 @@
                 <td><?php echo $user->Hourlypay ; ?></td>
                 <!--<td><a href="{{ action('EmployeeController@edit', ['id'=>$employee->id]) }}" class="btn btn-success btn-sm">編輯</a></td> -->
                 </tr>
-              }
-              ?>                  
+                           
               
             </tbody>
           </table>
