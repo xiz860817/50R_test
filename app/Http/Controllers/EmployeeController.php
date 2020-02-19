@@ -20,6 +20,14 @@ class EmployeeController extends Controller
         }
     }
 
+    public function new(){
+        return View::make('new');
+    }
+
+    public function store(Request $request){
+        $employees = $request->only('id','Name','Address','Phone','Hourlypay');
+        dd($employees);
+    }
     public function update($employee_id,EditEmployee $request){
         $employee = EmployeeEloquent::where('employee_id',$employee_id)->firstOrFail();
         $employee->Phone = $request->Phone;

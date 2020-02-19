@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::resource('employee','EmployeeController');
+
 Route::resource('date','DateController');
 Route::resource('new','HoursController');
 
