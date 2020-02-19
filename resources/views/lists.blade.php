@@ -22,11 +22,11 @@
               <?php
                 foreach ($employees as $user){
                     echo "<tr>";
-                    echo "<td>".$user->Empid."</td>";
+                    echo "<td>".$user->id."</td>";
                     echo "<td>".$user->Name."</td>";
                     echo "<td>".$user->Address."</td>";
                     echo "<td>".$user->Phone."</td>";
-                    echo "<td>".$user->HourlyPay."</td>";
+                    echo "<td>".$user->Hourlypay."</td>";
                     
                     echo "</tr>";
                 }
