@@ -15,7 +15,7 @@
                     <input type="text"class="form-control" id="id" name="id" value="<?php echo $_GET['id']; ?>">
                 </div>
             </div>
-            <div class="form-group row">
+            <!--<div class="form-group row">
                 <div class="col-sm-2"></div>
                 <label for="Name" class="col-sm-2 col-form-label">員工姓名</label>
                 <div class="col-sm-8">
@@ -43,6 +43,7 @@
                   <input type="text" class="form-control" id="Hourlypay" name="Hourlypay" value="<?php echo $_GET['Hourlypay']; ?>">
               </div>
           </div>
+        -->
             <div class="form-group row">
                 <div class="col-sm-10">
                     <input type="submit" class="btn btn-primary" value="送出">
