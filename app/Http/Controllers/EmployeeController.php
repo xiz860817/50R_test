@@ -11,14 +11,16 @@ class EmployeeController extends Controller
 {
     //
     public function index(){
-        $emps = Employee::all();
+        $employees = Employee::all();
+        return View::make('list',['employees' => $employees]);
+        /*$emps = Employee::all();
         echo $emps;
 
         $date = Employee::find(1)->date;
         echo $date;
         foreach ($date as $dates){
             echo $dates->Date;
-        }
+        }*/
     }
 
     public function new(){
