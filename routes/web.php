@@ -12,10 +12,12 @@
 */
 
 Route::get('/', function () {
-    return View('index');
+    return view('index');
 });
 
-Route::resource('employee','EmployeeController');
+Route::get('employee','EmployeeController');
+Route::get('new', 'EmployeeController@new');
+Route::post('store','EmployeeController@store');
 
 Route::resource('date','DateController');
 Route::resource('new','HoursController');

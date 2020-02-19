@@ -22,7 +22,7 @@ class EmployeeController extends Controller
     }
 
     public function new(){
-        return view::make('new');
+        return View::make('new');
     }
 
     public function store(Request $request){
