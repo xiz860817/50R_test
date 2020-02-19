@@ -20,17 +20,17 @@
             <tbody>
               
               <?php
-                foreach ($employees as $user){
-                    echo "<tr>";
-                    echo "<td>".$user->id."</td>";
-                    echo "<td>".$user->Name."</td>";
-                    echo "<td>".$user->Address."</td>";
-                    echo "<td>".$user->Phone."</td>";
-                    echo "<td>".$user->Hourlypay."</td>";
-                    echo '<td>''<a href= '{{(edit , [ 'id'=>$employee->id]) }} 'class="btn btn-success btn-sm">編輯</a>''</td>';
-                    echo "</tr>";
-                }
-                ?>                  
+              foreach ($employees as $user){
+              ?>
+              <tr>
+                <td><?php echo $user->id ; ?></td>
+                <td><?php echo $user->Name ; ?></td>
+                <td><?php echo $user->Address ; ?></td>
+                <td><?php echo $user->Hourlypay ; ?></td>
+                <td><a href= " 'edit' , 'id'=>$employee->id"  class="btn btn-success btn-sm">編輯</a></td>
+                </tr>
+              }
+              ?>                  
               
             </tbody>
           </table>
