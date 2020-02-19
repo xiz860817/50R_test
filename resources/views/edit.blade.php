@@ -40,7 +40,7 @@
               <div class="col-sm-2"></div>
               <label for="Hourlypay" class="col-sm-2 col-form-label">時薪</label>
               <div class="col-sm-8">
-                  <input type="text" class="form-control" id="Hourlypay" name="Hourlypay" value="<?php echo $_GET['Phone']; ?>">
+                  <input type="text" class="form-control" id="Hourlypay" name="Hourlypay" value="<?php echo $_GET['Hourlypay']; ?>">
               </div>
           </div>
             <div class="form-group row">
