@@ -51,4 +51,19 @@ class EmployeeController extends Controller
             'msg' => '修改成功'
         ]);
     }*/
+    public function update(Request $request){
+        if ($request->cancel){
+            $employees = Employee::all();
+            return View::make('lists',['employees'=>$employees]);
+        }
+        $employees = Employee::where('id',$request->input('oldId'))
+                                    ->update(['id'=>$request->input('id'),
+                                    'Name'=>$request->input('Name'),
+                                    'Address'=>$request->input('Address'),
+                                    'Phone'=>$request->input('Phone'),
+                                    'Hourlypay'=>$request->input('Hourlypay'
+                                    )]);
+        $employees = Employee::all();
+        return View::make('lists',['employees'=>$employees]);
+    }
 }
