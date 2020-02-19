@@ -39,7 +39,7 @@ class EmployeeController extends Controller
     }
 
     public function edit(Request $request){
-        return View::make('edit',['id'=>$request->id ,'Name'=>$request->Name,'Address'=>$request->Address,'Phone'=>$request->Phone,'Hourlypay'=>$request->Hourlypay]);
+        return View::make('edit',['id'=>$request->id ,'1Name'=>$request->Name,'Address'=>$request->Address,'Phone'=>$request->Phone,'Hourlypay'=>$request->Hourlypay]);
     }
     /*public function update($employee_id,EditEmployee $request){
         $employee = EmployeeEloquent::where('employee_id',$employee_id)->firstOrFail();
