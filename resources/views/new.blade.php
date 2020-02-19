@@ -7,14 +7,6 @@
     <div class="col-md-8">
         <div class="card">
         <div class="card-header">新增客戶</div>
-        <div class="card-body p-1">
-            <div class="form-group row">
-                <div class="col-sm-2"></div>
-                <label for="id" class="col-sm-2 col-form-label">員工編號</label>
-                <div class="col-sm-8">
-                    <input type="text"class="form-control" id="id" name="id" value="">
-                </div>
-            </div>
             <div class="form-group row">
                 <div class="col-sm-2"></div>
                 <label for="Name" class="col-sm-2 col-form-label">員工姓名</label>

@@ -26,8 +26,14 @@ class EmployeeController extends Controller
     }
 
     public function store(Request $request){
-        $employees = $request->only('id','Name','Address','Phone','Hourlypay');
-        dd($employees);
+        $employees = new Employee;
+        #$employees->Cusid=$request->input('Cusid');
+        $employees->Name=$request->input('Name');
+        $employees->Address=$request->input('Address');
+        $employees->Phone=$request->input('Phone');
+        $employees->Hourlypay=$request->input('Hourlypay');
+        $employees->save();
+        return redirect('employee');
     }
     /*public function update($employee_id,EditEmployee $request){
         $employee = EmployeeEloquent::where('employee_id',$employee_id)->firstOrFail();
