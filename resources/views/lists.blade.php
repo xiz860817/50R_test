@@ -27,7 +27,7 @@
                     echo "<td>".$user->Address."</td>";
                     echo "<td>".$user->Phone."</td>";
                     echo "<td>".$user->Hourlypay."</td>";
-                    echo '<td><a href= {{"edit", ["id"=>$employee->id]) }} class="btn btn-success btn-sm">編輯</a></td>''
+                    echo '<td><a href= {{"edit", ["id"=>$employee->id]) }} class="btn btn-success btn-sm">編輯</a></td>';
                     echo "</tr>";
                 }
                 ?>                  
