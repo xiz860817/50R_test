@@ -12,7 +12,7 @@
         <a class="nav-link" href="date">查詢日期</a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="{{ action('CustomerController@new') }}">新增員工資料</a>
+        <a class="nav-link" href="{{ action('EmployeeController@new') }}">新增員工資料</a>
       </li> 
     </ul>
   </div>  
