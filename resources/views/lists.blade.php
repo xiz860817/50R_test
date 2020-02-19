@@ -27,7 +27,12 @@
                 <td><?php echo $user->Name ; ?></td>
                 <td><?php echo $user->Address ; ?></td>
                 <td><?php echo $user->Hourlypay ; ?></td>
-                <td><a href="{{ action('EmployeeController@edit', ['id'=>$user->id]) }}" class="btn btn-success btn-sm">編輯</a></td>
+                <td><a href="{{ action('EmployeeController@edit', 
+                                ['id'=>$user->id,
+                                'Name'=>$user->Name,
+                                'Address'=>$user->Address,
+                                'Phone'=>$user->Phone,
+                                'Hourlypay'=>$user->Hourlypay ]) }}" class="btn btn-success btn-sm">編輯</a></td>
               </tr>
                            
               <?php }  ?>
