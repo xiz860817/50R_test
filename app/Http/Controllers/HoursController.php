@@ -26,7 +26,6 @@ class HoursController extends Controller
     public function test(){
         $hours = Hours::all();
         $emps = Employee::all();
-        echo $emps;
         return View::make('showhours',['hours' => $hours],['emps'=>$emps]);
     }
 
