@@ -8,7 +8,6 @@
         <div class="card-header">查詢日期</div>
         <div class="card-body p-1">
           <table class="table table-hover m-0">
-            <thead class="thead-darty">
                 <tr>
                     <th>月份 : </th>
                     <th><select name = "month" size = "1">
@@ -39,5 +38,9 @@
                     </th>
                     <th>日</th>
                 </tr>
-
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
 @stop
