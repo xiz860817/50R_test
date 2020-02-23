@@ -28,6 +28,10 @@ class EmployeeController extends Controller
     }
 
     public function store(Request $request){
+        if ($request->cancel){
+            $employees = Employee::all();
+            return View::make('lists',['employees' => $employees]);
+        }
         $employees = new Employee;
         #$employees->id=$request->input('id');
         $employees->Name=$request->input('Name');
