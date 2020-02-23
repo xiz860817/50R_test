@@ -1,6 +1,7 @@
 @extends('layouts.master')
 @section('title','顯示員工時數')
 @section('content')
+<form action="{{ action('HoursController@viewhours') }}" method="post">
     @csrf
     <div class="row justify-content-center">
     <div class="col-md-8">
