@@ -44,7 +44,7 @@
             <div class="col-sm-9">
                 <input type="submit" class="btn btn-primary" value="送出">
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-4">
                 <input type="submit" class="btn btn-warning" value="取消" name="cancel">
             </div>
         </div> 

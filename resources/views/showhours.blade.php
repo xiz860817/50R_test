@@ -20,7 +20,7 @@
                     # code...
                     echo "123";
                     $name = new App\Employee;
-                    echo $name->Name;
+                    echo $name;
                 #}?>
 
     
