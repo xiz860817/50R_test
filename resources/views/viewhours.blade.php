@@ -1,7 +1,6 @@
 @extends('layouts.master')
 @section('title','查詢員工時數')
 @section('content')
-<form action = "HoursController@show" method="post">
   <div class="row justify-content-center">
     <div class="col-md-4">
       <div class="card">
@@ -39,10 +38,9 @@
                     <th><h2>日</h2></th>
                 </tr>
           </table>
-          <td><a href="{{ action('HoursController@show') }}" class="btn btn-success btn-sm">查詢</a></td>
+          <td><a href="{{ action('HoursController@show') }}" method="post" class="btn btn-success btn-sm">查詢</a></td>
         </div>
       </div>
     </div>
   </div>
-</form>
 @stop

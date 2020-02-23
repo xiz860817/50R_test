@@ -1,19 +1,12 @@
-@extends('layouts.master')
-@section('title','顯示員工時數')
-@section('content')
-<form action="{{ action('HoursController@viewhours') }}" method="post">
-    @csrf
-    <div class="row justify-content-center">
-    <div class="col-md-8">
-        <div class="card">
-        <div class="card-header">編輯客戶資料</div>
-        <div class="card-body p-1">
-                    <?php 
-                    echo $_POST['month'];
-                    ?>
-        </div>
-        </div>
-    </div>
-    </div>
-
-@stop
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>123</title>
+    </head>
+    <body>
+        <div>
+            <?php
+                echo $_POST['month'];
+                ?></div>
+    </body></html>
