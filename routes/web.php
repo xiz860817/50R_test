@@ -20,7 +20,7 @@ Route::get('new', 'EmployeeController@new');
 Route::post('store','EmployeeController@store');
 Route::get('edit','EmployeeController@edit');
 Route::post('update','EmployeeController@update');
-Route::get('delete','CustomerController@delete');
+Route::get('delete','EmployeeController@delete');
 
 Route::resource('date','DateController');
 Route::resource('new1','HoursController');
