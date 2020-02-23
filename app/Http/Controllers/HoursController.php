@@ -10,6 +10,9 @@ class HoursController extends Controller
     //
     public function index(){
         $hours = Hours::all();
+        return View::make('viewhours',['hours' => $hours]);
+        
+        $hours = Hours::all();
         echo $hours;
 
         $empid = Hours::find(1);

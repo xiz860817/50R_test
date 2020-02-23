@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('index');
 });
 
+//員工新增刪除顯示資料
 Route::get('employee','EmployeeController@index');
 Route::get('new', 'EmployeeController@new');
 Route::post('store','EmployeeController@store');
@@ -22,8 +23,6 @@ Route::get('edit','EmployeeController@edit');
 Route::post('update','EmployeeController@update');
 Route::get('delete','EmployeeController@delete');
 
-Route::resource('date','DateController');
-Route::resource('new1','HoursController');
+//查詢員工時數
 
-#Route::get('edit/{employee_id}','EmployeeController@edit');
-#Route::post('edit/{employee_id}', 'EmployeeController@update');
+Route::get('date','HoursController@index');
