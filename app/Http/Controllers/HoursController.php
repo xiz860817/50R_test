@@ -9,8 +9,7 @@ class HoursController extends Controller
 {
     //
     public function index(){
-        $hours = Hours::all();
-        return View::make('viewhours',['hours' => $hours]);
+        return View::make('viewhours');
         
         /*$hours = Hours::all();
         echo $hours;
@@ -20,7 +19,8 @@ class HoursController extends Controller
         */
     }
     public function show(){
-        return View::make('showhours');
+        $hours = Hours::all();
+        return View::make('showhours',['hours' => $hours]);
     }
     public function test(){
         return View::make('showhours');
