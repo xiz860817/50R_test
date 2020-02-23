@@ -19,7 +19,12 @@
                 <?php foreach ($hours as $hour) {
                     # code...
                     echo $hour->Hours;
-                }?>
+                }
+                foreach ($emps as $emp) {
+                    # code...
+                    echo $emp;
+                }
+                ?>
 
     
 
