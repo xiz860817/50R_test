@@ -18,7 +18,7 @@
             <tbody>
                 <?php foreach ($hours as $hour) {
                     # code...
-                    echo strtotime($hour->date_id)->format('Y-m-d');
+                    echo strtotime($hour->date_id);
                 }
                 foreach ($emps as $emp) {
                     # code...
