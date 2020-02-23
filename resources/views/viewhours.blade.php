@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('title','查詢員工時數')
 @section('content')
-
+<form action = "HoursController@show" method="post">
   <div class="row justify-content-center">
     <div class="col-md-4">
       <div class="card">
@@ -44,4 +44,5 @@
       </div>
     </div>
   </div>
+</form>
 @stop
