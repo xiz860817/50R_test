@@ -39,6 +39,7 @@
                     <th><h2>日</h2></th>
                 </tr>
           </table>
+          <td><a href="{{ action('HoursController@show') }}" class="btn btn-success btn-sm">查詢</a></td>
         </div>
       </div>
     </div>

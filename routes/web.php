@@ -26,3 +26,4 @@ Route::get('delete','EmployeeController@delete');
 //查詢員工時數
 
 Route::get('date','HoursController@index');
+Route::post('showhours','HoursController@show');
