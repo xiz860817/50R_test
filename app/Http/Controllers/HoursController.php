@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Hours;
 use Illuminate\Http\Request;
-
+use View;
 class HoursController extends Controller
 {
     //
