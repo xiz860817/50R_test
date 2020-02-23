@@ -34,7 +34,7 @@
                                 'Phone'=>$user->Phone,
                                 'Hourlypay'=>$user->Hourlypay ]) }}" class="btn btn-success btn-sm">編輯</a></td>
                     <a href="{{ action('EmployeeController@delete', 
-                                ['id'=>$user->id
+                                ['id'=>$user->id,
                                 'Name'=>$user->Name,
                                 'Address'=>$user->Address,
                                 'Phone'=>$user->Phone,
