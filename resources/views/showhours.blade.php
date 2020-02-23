@@ -18,11 +18,11 @@
             <tbody>
                 <?php foreach ($hours as $hour) {
                     # code...
-                    echo $hour->Hours;
+                    echo $hour->date_id;
                 }
                 foreach ($emps as $emp) {
                     # code...
-                    echo $emp;
+                    echo $emp->Name;
                 }
                 ?>
 
