@@ -70,4 +70,9 @@ class EmployeeController extends Controller
         $employees = Employee::all();
         return View::make('lists',['employees'=>$employees]);
     }
+    public function delete(Request $request){
+        Employee::where('id',$request->input('id'))->delete();
+        $employees = Employee::all();
+        return View::make('lists',['employees'=>$employees]);
+    }
 }
