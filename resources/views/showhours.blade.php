@@ -18,7 +18,7 @@
             <tbody>
                 <?php foreach ($hours as $hour) {
                     # code...
-                    echo substr($hour->date_id,0,4);
+                    echo substr($hour->date_id,6,2);
                 }
                 foreach ($emps as $emp) {
                     # code...
