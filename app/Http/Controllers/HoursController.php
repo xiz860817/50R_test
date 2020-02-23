@@ -22,4 +22,7 @@ class HoursController extends Controller
     public function show(){
         return View::make('showhours');
     }
+    public function test(){
+        return View::make('showhours');
+    }
 }
