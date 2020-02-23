@@ -18,8 +18,9 @@
             <tbody>
                 <?php #foreach ($hours as $hour) {
                     # code...
+                    echo "123";
                     $name = new App\Employee;
-                    echo $name->Name
+                    echo $name->Name;
                 #}?>
 
     
@@ -27,4 +28,4 @@
 
 
 @stop
-#echo $_GET['month'];
+<!--echo $_GET['month'];-->
