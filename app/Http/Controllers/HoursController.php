@@ -19,7 +19,7 @@ class HoursController extends Controller
         echo $empid->date->employee_id;
         */
     }
-    public function show(){
+    public function a(){
         return View::make('showhours');
     }
 }
