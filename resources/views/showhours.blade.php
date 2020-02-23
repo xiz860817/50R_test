@@ -18,7 +18,7 @@
             <tbody>
                 <?php #foreach ($hours as $hour) {
                     # code...
-                    $name = new APP\Employee;
+                    $name = new App\Employee;
                     echo $name->Name
                 #}?>
 
