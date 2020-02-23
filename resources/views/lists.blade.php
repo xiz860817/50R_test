@@ -39,6 +39,7 @@
                                 'Address'=>$user->Address,
                                 'Phone'=>$user->Phone,
                                 'Hourlypay'=>$user->Hourlypay ]) }}" class="btn btn-danger btn-sm">刪除</a></td>
+                                
                            
               <?php }  ?>
             </tbody>

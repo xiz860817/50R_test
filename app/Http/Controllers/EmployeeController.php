@@ -71,7 +71,7 @@ class EmployeeController extends Controller
         return View::make('lists',['employees'=>$employees]);
     }
     public function delete(Request $request){
-        Employee::where('id',$request->input('id'))
+        $employees = Employee::where('id',$request->input('id'))
                         ->delete(['id'=>$request->input('id'),
                         'Name'=>$request->input('Name'),
                         'Address'=>$request->input('Address'),
