@@ -29,6 +29,7 @@
                     <th>月</th>
                 </tr>
                 <tr>
+                    <th>日期 : </th>
                     <th><select name = "day" size = "1">
                         <?php for ($i = 1;$i<=31;$i++){ 
                         echo "<option value= $i>$i</option>";
@@ -36,5 +37,7 @@
                         ?>
                         </select>
                     </th>
+                    <th>日</th>
                 </tr>
 
+@stop

@@ -12,10 +12,11 @@ class HoursController extends Controller
         $hours = Hours::all();
         return View::make('viewhours',['hours' => $hours]);
         
-        $hours = Hours::all();
+        /*$hours = Hours::all();
         echo $hours;
 
         $empid = Hours::find(1);
         echo $empid->date->employee_id;
+        */
     }
 }
