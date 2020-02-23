@@ -26,6 +26,7 @@
                 <td><?php echo $user->id ; ?></td>
                 <td><?php echo $user->Name ; ?></td>
                 <td><?php echo $user->Address ; ?></td>
+                <td><?php echo $user->Phone ; ?></td>
                 <td><?php echo $user->Hourlypay ; ?></td>
                 <td><a href="{{ action('EmployeeController@edit', 
                                 ['id'=>$user->id,

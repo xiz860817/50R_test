@@ -16,12 +16,10 @@
                 </tr>
             </thead>
             <tbody>
-                <?php #foreach ($hours as $hour) {
+                <?php foreach ($hours as $hour) {
                     # code...
-                    echo "123";
-                    $name = new App\Employee;
-                    echo $name;
-                #}?>
+                    echo $hour->Hours;
+                }?>
 
     
 

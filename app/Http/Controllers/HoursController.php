@@ -22,7 +22,5 @@ class HoursController extends Controller
         $hours = Hours::all();
         return View::make('showhours',['hours' => $hours]);
     }
-    public function test(){
-        return View::make('showhours');
-    }
+
 }

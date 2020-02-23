@@ -41,10 +41,10 @@
           </table>
           <div class="form-group row">
             <div class="col-sm-1"></div>
-            <div class="col-sm-9">
+            <div class="col-sm-7">
                 <input type="submit" class="btn btn-primary" value="送出">
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 <input type="submit" class="btn btn-warning" value="取消" name="cancel">
             </div>
         </div> 
