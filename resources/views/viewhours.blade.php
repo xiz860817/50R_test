@@ -43,7 +43,6 @@
             <div class="col-sm-1"></div>
             <div class="col-sm-9">
                 <input type="submit" class="btn btn-primary" value="送出">
-                <input type="hidden" id="month" name="month"  value="<?php echo $_POST['month']; ?>">
             </div>
             <div class="col-sm-1">
                 <input type="submit" class="btn btn-warning" value="取消" name="cancel">
