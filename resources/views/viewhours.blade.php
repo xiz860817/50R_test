@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('title','查詢員工時數')
 @section('content')
-<form action="{{ action('HoursController@show') }}" method="post">
+<form action="{{ action('HoursController@show') }}" method="get">
   <div class="row justify-content-center">
     <div class="col-md-4">
       <div class="card">
