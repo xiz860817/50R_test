@@ -8,9 +8,8 @@
         <div class="card-header">查詢日期</div>
         <div class="card-body p-1">
           <table class="table table-hover m-0">
-              <h2>
                 <tr>
-                    <th>月份 : </th>
+                    <th><h2>月份 : </h2></th>
                     <th><select name = "month" size = "1">
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -39,7 +38,6 @@
                     </th>
                     <th>日</th>
                 </tr>
-              </h2>
           </table>
         </div>
       </div>
