@@ -19,9 +19,10 @@
                 <?php 
                 $m = $_GET['month'];
                 $d = $_GET['day'];
+                
                 foreach ($hours as $hour) {
                     if ( $m == substr($hour->date_id,5,2) and $d == substr($hour->date_id,8,2)){
-                        echo $empid;
+                        echo App\Hours::find(1);
                     }
                     else{
                         echo "資料不存在";
