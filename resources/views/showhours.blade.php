@@ -17,17 +17,19 @@
             </thead>
             <tbody>
                 <?php 
-                echo $_GET['month'];
-                echo  $_GET['day'];
+                $m = $_GET['month'];
+                $d = $_GET['day'];
                 foreach ($hours as $hour) {
-                    echo substr($hour->date_id,5,2);
+                    if ( $m == substr($hour->date_id,5,2) and $d == substr($hour->date_id,5,2)){
+                        echo $m,$d;
+                    }
                 }
-                echo $emps;
-                /*
+                
+                
                 foreach ($emps as $emp) {
                     # code...
                     echo $emp->Name;
-                }*/
+                
                 ?>
 
     
