@@ -21,7 +21,7 @@
                 $d = $_GET['day'];
                 foreach ($hours as $hour) {
                     if ( $m == substr($hour->date_id,5,2) and $d == substr($hour->date_id,8,2)){
-                        echo $m;
+                        echo $empid;
                     }
                     else{
                         echo "資料不存在";
