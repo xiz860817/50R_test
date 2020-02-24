@@ -17,8 +17,8 @@
             </thead>
             <tbody>
                 <?php 
-                $m = $_GET['month'];
-                $d = $GET['day'];
+                echo $_GET['month'];
+                echo  $_GET['day'];
                 foreach ($hours as $hour) {
                     echo substr($hour->date_id,5,2);
                 }
