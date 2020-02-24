@@ -17,12 +17,12 @@
             </thead>
             <tbody>
                 <?php 
-                m = $_GET['month'];
-                d = $GET['day'];
+                $m = $_GET['month'];
+                $d = $GET['day'];
                 foreach ($hours as $hour) {
                     echo substr($hour->date_id,5,2);
                 }
-                //echo $emps;
+                echo $emps;
                 /*
                 foreach ($emps as $emp) {
                     # code...
