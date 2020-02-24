@@ -11,17 +11,8 @@ class HoursController extends Controller
     //
     public function index(){
         return View::make('viewhours');
-        $a= new Hours;
-        for($i = 1;$i<3 ;$i++){
-            $a->employee_id = $i;
-            $a->Date = '2020-03-13';
-            $a->save();
-        }
-        
         /*$hours = Hours::all();
-        echo $hours;
-
-        
+        echo $hours;   
         */
     }
     public function show(){
