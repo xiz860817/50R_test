@@ -29,5 +29,5 @@ class DateController extends Controller
             //echo $hours->Hours;
         //}
 
-    }
 }
+
