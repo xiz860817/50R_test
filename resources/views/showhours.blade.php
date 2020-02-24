@@ -16,14 +16,18 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($hours as $hour) {
-                    # code...
-                    echo substr($hour->date_id,6,2);
+                <?php 
+                m = $_GET['month'];
+                d = $GET['day'];
+                foreach ($hours as $hour) {
+                    echo substr($hour->date_id,5,2);
                 }
+                echo $emps;
+                /*
                 foreach ($emps as $emp) {
                     # code...
                     echo $emp->Name;
-                }
+                }*/
                 ?>
 
     
