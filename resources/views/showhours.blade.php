@@ -32,7 +32,7 @@
                 foreach ($emps as $emp) {
                     # code...
                     echo $emp->Name;
-                
+                }
                 ?>
 
     
