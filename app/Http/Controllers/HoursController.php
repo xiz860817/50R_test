@@ -21,14 +21,16 @@ class HoursController extends Controller
     public function show(){
         $hours = Hours::all();
         $emps = Employee::all();
-        return View::make('showhours',['hours' => $hours],['emps'=>$emps]);
+        $empid = Hours::find(1);
+        echo $empid->date->employee_id;
+        return View::make('showhours',['hours' => $hours],['emps'=>$emps],['empid'=>$empid]);
     }
     public function test(){
         $hours = Hours::all();
         $emps = Employee::all();
         $empid = Hours::find(1);
         echo $empid->date->employee_id;
-        return View::make('showhours',['hours' => $hours],['emps'=>$emps],['empid'=>$empid]);
+        return View::make('showhours',['hours' => $hours],['emps'=>$emps],['emps'=>$emps]);
     }
 
 }
