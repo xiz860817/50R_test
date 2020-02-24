@@ -15,8 +15,7 @@ class HoursController extends Controller
         /*$hours = Hours::all();
         echo $hours;
 
-        $empid = Hours::find(1);
-        echo $empid->date->employee_id;
+        
         */
     }
     public function show(){
@@ -27,7 +26,9 @@ class HoursController extends Controller
     public function test(){
         $hours = Hours::all();
         $emps = Employee::all();
-        return View::make('showhours',['hours' => $hours],['emps'=>$emps]);
+        $empid = Hours::find(1);
+        echo $empid->date->employee_id;
+        return View::make('showhours',['hours' => $hours],['emps'=>$emps],['empid'=>$empid]);
     }
 
 }
