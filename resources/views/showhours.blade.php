@@ -25,7 +25,7 @@
                         echo App\Date::where('Date','=',$hour->date_id)->get();
                         #$Name = App\Employee::find(1)  $dateempid = ->date->employee_id
                         $count = 1;
-                        endif
+                        
                     }
                 }
                 if($count == 0){
