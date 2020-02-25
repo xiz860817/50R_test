@@ -19,19 +19,18 @@
                 <?php 
                 $m = $_GET['month'];
                 $d = $_GET['day'];
-                
+                $count = 0;
                 foreach ($hours as $hour) {
                     if ( $m == substr($hour->date_id,5,2) and $d == substr($hour->date_id,8,2)){
-                        echo App\Hours::where('date_id','=',$hour->date_id)->get();
+                        echo App\Date::where('Date','=',$hour->date_id)->get();
                         #$Name = App\Employee::find(1)  $dateempid = ->date->employee_id
-                        echo "123";
-
-                    }
-                    else{
-                        echo "資料不存在";
+                        $count = 1;
+                        endif
                     }
                 }
-                
+                if($count == 0){
+                    echo "資料不存在";
+                }
                 /*
                 foreach ($emps as $emp) {
                     # code...
