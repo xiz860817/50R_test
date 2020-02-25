@@ -23,7 +23,7 @@
               foreach ($employees as $user){
               ?>
               <tr>
-                <td><?php echo $user->id ; echo App\Date::where('employee_id','=',$user->id)->get();?></td>
+                <td><?php echo $user->id ; echo App\Date::where('employee_id','=',$user->id)->get()[0]["Date"];?></td>
                 <td><?php echo $user->Name ; ?></td>
                 <td><?php echo $user->Address ; ?></td>
                 <td><?php echo $user->Phone ; ?></td>
