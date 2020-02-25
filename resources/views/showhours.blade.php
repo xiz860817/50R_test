@@ -24,6 +24,7 @@
                     if ( $m == substr($hour->date_id,5,2) and $d == substr($hour->date_id,8,2)){
                          #echo App\Hours::where('date_id',"2020-02-17");
                         #$Name = App\Employee::find(1) ->date->employee_id $dateempid =
+                        echo "123";
 
                     }
                     else{
