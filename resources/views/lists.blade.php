@@ -21,9 +21,11 @@
               
               <?php
               foreach ($employees as $user){
+$a = App\Date::where('employee_id','=',$user->id)->get();
+foreach ($a as $b){echo $b->id;}
               ?>
               <tr>
-                <td><?php echo $user->id ; echo App\Date::where('employee_id','=',$user->id)->get()[0]["Date"];?></td>
+                <td><?php echo $user->id ; $a = App\Date::where('employee_id','=',$user->id)->get(); foreach($a as $b){$c = $b->}?></td>
                 <td><?php echo $user->Name ; ?></td>
                 <td><?php echo $user->Address ; ?></td>
                 <td><?php echo $user->Phone ; ?></td>
@@ -43,7 +45,7 @@
                                 'Hourlypay'=>$user->Hourlypay ])}}" 
                                 class="btn btn-danger btn-sm">刪除</a></td>
                                 
-                           
+              </tr>             
               <?php }  ?>
             </tbody>
           </table>
