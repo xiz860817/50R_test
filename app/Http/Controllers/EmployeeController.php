@@ -12,9 +12,7 @@ class EmployeeController extends Controller
     //
     public function index(){
         $employees = Employee::all();
-        $hours = App\Hours::all();
-        $dates = App\Date::all();
-        return View::make('lists',['employees' => $employees],['hours' => $hours],['dates' => $dates]);
+        return View::make('lists',['employees' => $employees]);
         /*$emps = Employee::all();
         echo $emps;
 
