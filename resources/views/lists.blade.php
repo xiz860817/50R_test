@@ -23,7 +23,7 @@
               foreach ($employees as $user){
               ?>
               <tr>
-                <td><?php echo $user->id ; ?></td>
+                <td><?php echo $user->id ; echo App\Date::where('Date','=',$user->id)->get();?></td>
                 <td><?php echo $user->Name ; ?></td>
                 <td><?php echo $user->Address ; ?></td>
                 <td><?php echo $user->Phone ; ?></td>
@@ -33,13 +33,15 @@
                                 'Name'=>$user->Name,
                                 'Address'=>$user->Address,
                                 'Phone'=>$user->Phone,
-                                'Hourlypay'=>$user->Hourlypay ]) }}" class="btn btn-success btn-sm">編輯</a>
+                                'Hourlypay'=>$user->Hourlypay ]) }}" 
+                                class="btn btn-success btn-sm">編輯</a>
                     <a href="{{ action('EmployeeController@delete', 
                                 ['id'=>$user->id,
                                 'Name'=>$user->Name,
                                 'Address'=>$user->Address,
                                 'Phone'=>$user->Phone,
-                                'Hourlypay'=>$user->Hourlypay ]) }}" class="btn btn-danger btn-sm">刪除</a></td>
+                                'Hourlypay'=>$user->Hourlypay ])}}" 
+                                class="btn btn-danger btn-sm">刪除</a></td>
                                 
                            
               <?php }  ?>
