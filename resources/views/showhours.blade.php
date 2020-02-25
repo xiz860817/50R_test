@@ -22,8 +22,11 @@
                 $count = 0;
                 foreach ($hours as $hour) {
                     if ( $m == substr($hour->date_id,5,2) and $d == substr($hour->date_id,8,2)){
-                        echo App\Date::where('Date','=',$hour->date_id)->get();
-                        #$Name = App\Employee::find(1)  $dateempid = ->date->employee_id
+                        $emp_ids = App\Date::where('Date','=',$hour->date_id)->get(); #取得資料表Date
+			$emp_id = $emp_ids[0]["employee_id"]; #取得資料表Date->employee_id
+                        echo $emp_id;
+			$id = App\Employee::where('id','=',$emp_id)->get();
+			echo $id[0]["Name"];
                         $count = 1;
                         
                     }
