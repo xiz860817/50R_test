@@ -22,12 +22,12 @@
                 
                 foreach ($hours as $hour) {
                     echo $hour;
-                    if ( $m == substr($hour->date_id,5,2) and $d == substr($hour->date_id,8,2)){
+                    /*if ( $m == substr($hour->date_id,5,2) and $d == substr($hour->date_id,8,2)){
                         echo App\Hours::find(1)->date;
                     }
                     else{
                         echo "資料不存在";
-                    }
+                    }*/
                 }
                 
                 
