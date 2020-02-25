@@ -21,20 +21,21 @@
                 $d = $_GET['day'];
                 
                 foreach ($hours as $hour) {
-                    echo $hour;
-                    /*if ( $m == substr($hour->date_id,5,2) and $d == substr($hour->date_id,8,2)){
-                        echo App\Hours::find(1)->date;
+                    if ( $m == substr($hour->date_id,5,2) and $d == substr($hour->date_id,8,2)){
+                         return App\Hours::where('date_id',$hour->date_id);
+                        #$Name = App\Employee::find(1) ->date->employee_id $dateempid =
+
                     }
                     else{
                         echo "資料不存在";
-                    }*/
+                    }
                 }
                 
-                
+                /*
                 foreach ($emps as $emp) {
                     # code...
                     echo $emp->Name;
-                }
+                }*/
                 ?>
 
     
