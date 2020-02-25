@@ -10,6 +10,10 @@ class HoursController extends Controller
 {
     //
     public function index(){
+        $a = new Hours();
+        $a->date_id = '2020-03-13';
+        $a->Hours = 4;
+        $a->save();
         return View::make('viewhours');
         /*$hours = Hours::all();
         echo $hours;   
