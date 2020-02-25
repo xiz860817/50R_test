@@ -30,6 +30,8 @@
                         $Name = $id[0]["Name"];
                         $count = 1;
                         echo '<th>'.$Name.'</th>';
+                        echo '<th>'.$hour->date_id.'</th>';
+                        echo '<th>'.$hour->Hours.'</th>';
                     }
                 }
                 if($count == 0){   #如果沒有該筆資料
