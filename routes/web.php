@@ -26,10 +26,11 @@ Route::post('update','EmployeeController@update');
 Route::get('delete','EmployeeController@delete');
 
 //查詢員工時數
-
-Route::get('date','HoursController@index');
-Route::get('test','DateController@index');
 Route::get('showhours','HoursController@show');
+Route::get('date','HoursController@index');
 
 //刪除員工連同->相同員工編碼的日期資料庫也刪除
 Route::get('Datedelete','DateController@delete');
+
+//測試
+Route::get('test','DateController@index');

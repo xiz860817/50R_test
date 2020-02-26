@@ -12,7 +12,10 @@ class DateController extends Controller
     public function index(){
         //$dates = Date::all();
         //echo $dates;
-
+        $date = new Date();
+        $date->employee_id = "2";
+        $date->Date = "2020-03-13";
+        $date->save();
         }
         //回找employee的Name
         /*$name = Date::find(1);
