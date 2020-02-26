@@ -32,3 +32,10 @@
   </div>
 </div>
 @stop
+
+<a href="{{ action('EmployeeController@delete', 
+                                ['id'=>$user->id,
+                                'Name'=>$user->Name,
+                                'Address'=>$user->Address,
+                                'Phone'=>$user->Phone,
+                                'Hourlypay'=>$user->Hourlypay ])}}"
