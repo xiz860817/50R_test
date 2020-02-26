@@ -38,16 +38,16 @@
                     $dates = App\Date::where('employee_id','=',$user->id)->get();
                     foreach($dates as $date){ 
                       echo $date;?>
-                    <a href="{{ action('EmployeeController@delete', 
+                    <a href="{{ /*action('EmployeeController@delete', 
                                 ['id'=>$user->id,
                                 'Name'=>$user->Name,
                                 'Address'=>$user->Address,
                                 'Phone'=>$user->Phone,
-                                'Hourlypay'=>$user->Hourlypay ])}}
-                                {{ action('DateController@delete',
+                                'Hourlypay'=>$user->Hourlypay ])}}*/
+                                 action('DateController@delete'/*,
                                 ['id'=>$date->id,
                                 'employee_id'=>$date->employee_id,
-                                'Date'=>$date->Date])
+                                'Date'=>$date->Date]*/)
                                 }}" 
                                 class="btn btn-danger btn-sm">刪除</a></td>
                                 
