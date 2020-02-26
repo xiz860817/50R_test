@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Hours;
 use App\Employee;
+use App\Date;
 use Illuminate\Http\Request;
 use View;
 class HoursController extends Controller
@@ -16,10 +17,10 @@ class HoursController extends Controller
         */
     }
     public function show(){
-        $hours = Hours::all();
+        $dates = Date::all();
         #$emps = Employee::all();
         
-    return View::make('showhours',['hours' => $hours]/*,['emps'=>$emps]*/);
+    return View::make('showhours',['dates' => $dates]);
     }
 
     public function delete(){
