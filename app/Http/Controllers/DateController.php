@@ -26,8 +26,10 @@ class DateController extends Controller
             //echo $hours->Hours;
         //}
         public function delete(Request $request){
-            $dates = Date::where('employee_id',$request->input('id'))->get();
-            #->delete(['employee_id'=>$request->input('id')]);
+            $dates = Date::where('employee_id',$request->input('employee_id'))
+            ->delete(['id'=>$request->input('id'),
+	    'employee_id'=>$request->input('employee_id'),
+	    'Date'=>$request->input('Date')]);
         }
 }
 

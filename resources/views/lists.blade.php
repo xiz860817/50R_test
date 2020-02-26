@@ -39,7 +39,7 @@
                     foreach($dates as $date){ 
                       echo $date;?>
                     <a href="{{ action('DateController@delete', 
-                                ['id'=>$date->id
+                                ['employee_id'=>$date->employee_id
                                  ])}}"
                                 
                                 
