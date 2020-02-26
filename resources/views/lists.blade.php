@@ -46,7 +46,8 @@
                               'Hourlypay'=>$user->Hourlypay ]),
                               action('DateController@delete', 
                               ['id'=>$date->id])}}"
-                               class="btn btn-danger btn-sm">刪除</a></td>       
+                              class="btn btn-danger btn-sm">刪除</a></td>       
+                               <a href="{{ action('DateController@delete', ['Cusid'=>$customer->Cusid]) }}" class="btn btn-danger btn-sm">刪除</a></td>
                     <?php }  ?>  
               </tr>           
               <?php }  ?>
