@@ -37,6 +37,7 @@
                     <?php  
                     $dates = App\Date::where('employee_id','=',$user->id)->get();
                     foreach($dates as $date){
+                      echo $date;
                       ?>
                     <a href="{{  action('DateController@delete', 
                               ['employee_id'=>$date->employee_id])}}"
