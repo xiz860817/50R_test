@@ -12,13 +12,13 @@ class HoursController extends Controller
     //
     public function index(){
         $a = new Hours();
-        $a->date_id=7;
+        $a->date_id="7";
         $a->Hours = 8;
         $a->save();
-        $a->date_id=10;
+        $a->date_id="10";
         $a->Hours = 7;
         $a->save();
-        $a->date_id=11;
+        $a->date_id="11";
         $a->Hours = 6;
         $a->save();
         return View::make('viewhours');
