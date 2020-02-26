@@ -44,10 +44,10 @@
                                 'Address'=>$user->Address,
                                 'Phone'=>$user->Phone,
                                 'Hourlypay'=>$user->Hourlypay ])}}
-                                {{ action('EmployeeController@delete',
-                                ['id'=>$date->id
-
-                                ])
+                                {{ action('DateController@delete',
+                                ['id'=>$date->id,
+                                'employee_id'=>$date->employee_id,
+                                'Date'=>$date->Date])
                                 }}" 
                                 class="btn btn-danger btn-sm">刪除</a></td>
                                 
