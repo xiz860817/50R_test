@@ -78,6 +78,7 @@ class EmployeeController extends Controller
                         'Phone'=>$request->input('Phone'),
                         'Hourlypay'=>$request->input('Hourlypay')
                         ]);
+        #$dates = App\Date::where()
 
         $employees = Employee::all();
         return View::make('lists',['employees'=>$employees]);
