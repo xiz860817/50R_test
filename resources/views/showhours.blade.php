@@ -20,6 +20,7 @@
                 <?php 
                 $m = $_GET['month']; #取得從viewhours的month
                 $d = $_GET['day'];  #取得從viewhours的day
+		if(strlen($d)==1){$z = 0;$d = $z.$d ;echo $d;} //把單數的day變成雙數顯示
                 $count = 0;  //計數是否有資料,0為沒資料,1則有
                 foreach ($hours as $hour) {   
                     //如果有資料則if成立

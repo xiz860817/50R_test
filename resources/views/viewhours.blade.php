@@ -30,9 +30,9 @@
                 <tr>
                     <th><h2>日期 : </h2></th>
                     <th><h2><select name = "day" size = "1">
-                        <?php for ($i = 1;$i<=31;$i++){ 
+                        <?php for ($i = 1;$i<=31;$i++){
                         echo "<option value= $i>$i</option>";
-                        }
+			}
                         ?>
                         </select></h2>
                     </th>
