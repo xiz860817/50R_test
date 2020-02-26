@@ -43,9 +43,8 @@
                               'Name'=>$user->Name,
                               'Address'=>$user->Address,
                               'Phone'=>$user->Phone,
-                              'Hourlypay'=>$user->Hourlypay ]),
-                              action('DateController@delete', 
-                              ['id'=>$date->id])}}" class="btn btn-danger btn-sm">刪除</a></td>       
+                              'Hourlypay'=>$user->Hourlypay ])}}"
+                               class="btn btn-danger btn-sm">刪除</a></td>       
                     <?php }  ?>             
               <?php }  ?>
             </tbody>

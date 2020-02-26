@@ -33,3 +33,5 @@
 </div>
 @stop
 
+action('DateController@delete', 
+                              ['id'=>$date->id])}}"
