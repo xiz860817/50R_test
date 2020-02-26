@@ -34,7 +34,7 @@
                                 'Phone'=>$user->Phone,
                                 'Hourlypay'=>$user->Hourlypay ]) }}" 
                                 class="btn btn-success btn-sm">編輯</a>
-                    <?php $dates = App\Date::where('emoloyee_id','=',$user->id)->get();
+                    <?php $dates = App\Date::where('employee_id','=',$user->id)->get();
                     foreach($dates as $date){ 
                       echo $date;?>
                     <a href="{{ action('EmployeeController@delete', 
