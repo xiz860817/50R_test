@@ -46,7 +46,7 @@
                                 action('DateController@delete')
                                 
 
-                                ]                                }}" 
+                                                       }}" 
                                 class="btn btn-danger btn-sm">刪除</a></td>
                                 
                                 <?php }  ?>             
