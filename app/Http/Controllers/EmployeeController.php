@@ -78,6 +78,7 @@ class EmployeeController extends Controller
                         'Phone'=>$request->input('Phone'),
                         'Hourlypay'=>$request->input('Hourlypay')
                         ]);
+                        //在這邊寫刪除Date的程式
         #$dates = App\Date::where()
 
         $employees = Employee::all();
