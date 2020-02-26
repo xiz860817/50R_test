@@ -43,8 +43,8 @@
                                 'Name'=>$user->Name,
                                 'Address'=>$user->Address,
                                 'Phone'=>$user->Phone,
-                                'Hourlypay'=>$user->Hourlypay ]),
-                                action('App\DateController@delete',
+                                'Hourlypay'=>$user->Hourlypay ])}}
+                                {{ action('EmployeeController@delete',
                                 ['id'=>$date->id
 
                                 ])
