@@ -25,7 +25,7 @@ class DateController extends Controller
         //foreach ($hour as $hours){
             //echo $hours->Hours;
         //}
-        public function delete(){
+        public function delete(Request $request){
             echo "Datedelete";
         }
 }
