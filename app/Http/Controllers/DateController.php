@@ -13,8 +13,24 @@ class DateController extends Controller
         //$dates = Date::all();
         //echo $dates;
         $date = new Date();
-        $date->employee_id = "2";
-        $date->Date = "2020-03-13";
+        $date->employee_id = "7";
+        $date->Date = "2020-04-01";
+        $date->save();
+        $date = new Date();
+        $date->employee_id = "8";
+        $date->Date = "2020-05-01";
+        $date->save();
+        $date = new Date();
+        $date->employee_id = "9";
+        $date->Date = "2020-09-30";
+        $date->save();
+        $date = new Date();
+        $date->employee_id = "10";
+        $date->Date = "2020-04-13";
+        $date->save();
+        $date = new Date();
+        $date->employee_id = "11";
+        $date->Date = "2020-04-01";
         $date->save();
         }
         //回找employee的Name
