@@ -22,11 +22,13 @@
               <?php
               foreach ($employees as $user){
               ?>
-              <tr>
+              <tr><!--顯示員工編號,員工姓名,員工地址,電話-->
+                <td><?php echo $user->id; ?>
                 <td><?php echo $user->Name ; ?></td>
                 <td><?php echo $user->Address ; ?></td>
                 <td><?php echo $user->Phone ; ?></td>
                 <td><?php echo $user->Hourlypay ; ?></td>
+                <!--編輯按鈕-->
                 <td><a href="{{ action('EmployeeController@edit', 
                                 ['id'=>$user->id,
                                 'Name'=>$user->Name,
@@ -34,11 +36,16 @@
                                 'Phone'=>$user->Phone,
                                 'Hourlypay'=>$user->Hourlypay ]) }}" 
                                 class="btn btn-success btn-sm">編輯</a>
-                    <?php  
+                    <?php
+                    #取得Date資料表內容  
                     $dates = App\Date::where('employee_id','=',$user->id)->get();
                     foreach($dates as $date){
                       echo $date;
+                    $hours = App\Hours::where('date_id','=',$date->employee_id)->get();
+                    foreach($hours as $hour){
+                      echo $hour;
                       ?>
+                      <!--以下刪除包含員工端,以及員工工作日期-->
                     <a href="{{action('EmployeeController@delete', 
                               ['id'=>$user->id,
                               'Name'=>$user->Name,
