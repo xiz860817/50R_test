@@ -38,3 +38,6 @@ Route::get('clockon', function () {
 });
 //測試
 Route::get('test','DateController@index');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
