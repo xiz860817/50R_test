@@ -40,21 +40,22 @@
                     #取得Date資料表內容  
                     $dates = App\Date::where('employee_id','=',$user->id)->get();
                     foreach($dates as $date){
-                      echo $date;
+                      //echo $date;
                     }
+                    #取得Hours資料表內容  
                     $hours = App\Hours::where('date_id','=',$date->employee_id)->get();
                     foreach($hours as $hour){
-                      echo $hour;
+                      //echo $hour;
                       ?>
-                      <!--以下刪除包含員工端,以及員工工作日期-->
+                      <!--刪除按鈕  以下刪除包含員工資料,以及員工工作日期,以及工作時數-->
                     <a href="{{action('EmployeeController@delete', 
                               ['id'=>$user->id,
                               'Name'=>$user->Name,
                               'Address'=>$user->Address,
                               'Phone'=>$user->Phone,
                               'Hourlypay'=>$user->Hourlypay, 
-                              'employee_id'=>$date->employee_id,
-                              'date_id'=>$hour->date_id])  
+                              'employee_id'=>$date->employee_id, //將employee_id(為了刪除Date)傳至EmployeeController再做處理
+                              'date_id'=>$hour->date_id])     //將date_id(為了刪除時數)傳至EmployeeController再做處理
                               }}"
                               class="btn btn-danger btn-sm">刪除</a></td>
                     <?php }  ?>             
