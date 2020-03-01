@@ -13,7 +13,12 @@
       </li>
        <li class="nav-item">
         <a class="nav-link" href="new">新增員工資料</a>
-      </li> 
+      </li>
+    </ul>
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link" href="new">新增員工資料</a>
+      </li>
     </ul>
   </div>  
 </nav>
