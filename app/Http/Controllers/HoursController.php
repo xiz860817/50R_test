@@ -12,6 +12,7 @@ class HoursController extends Controller
     //
     public function index(){
         $a = new Hours();
+
         return View::make('viewhours');
         /*$hours = Hours::all();
         echo $hours;   

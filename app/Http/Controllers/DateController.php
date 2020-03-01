@@ -9,7 +9,7 @@ use App\Date;
 class DateController extends Controller
 {
     //
-    public function index(){
+    public function index(){ $a=new Date(); 
         //$dates = Date::all();
         //echo $dates;
 
