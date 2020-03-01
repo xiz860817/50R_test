@@ -54,8 +54,8 @@
                               'Address'=>$user->Address,
                               'Phone'=>$user->Phone,
                               'Hourlypay'=>$user->Hourlypay, 
-                              'employee_id'=>$date->employee_id, //將employee_id(為了刪除Date)傳至EmployeeController再做處理
-                              'date_id'=>$hour->date_id])     //將date_id(為了刪除時數)傳至EmployeeController再做處理
+                              'employee_id'=>$date->employee_id,
+                              'date_id'=>$hour->date_id])  
                               }}"
                               class="btn btn-danger btn-sm">刪除</a></td>
                     <?php }  ?>             
