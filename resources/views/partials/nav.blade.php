@@ -20,5 +20,8 @@
         <a class="nav-link" href="new">新增員工資料</a>
       </li>
     </ul>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   </div>  
 </nav>
