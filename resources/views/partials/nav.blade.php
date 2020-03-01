@@ -15,13 +15,10 @@
         <a class="nav-link" href="new">新增員工資料</a>
       </li>
     </ul>
-    <ul class="nav justify-content-end">
+  </div>  
+  <ul class="nav justify-content-end">
       <li class="nav-item">
-        <a class="nav-link" href="new">新增員工資料</a>
+        <a class="nav-link" href="clockon">打卡</a>
       </li>
     </ul>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>  
 </nav>

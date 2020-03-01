@@ -32,5 +32,9 @@ Route::get('date','HoursController@index');
 //刪除員工連同->相同員工編碼的日期資料庫也刪除
 Route::get('Datedelete','DateController@delete');
 
+//打卡
+Route::get('clockon', function () {
+    return view('clock');
+});
 //測試
 Route::get('test','DateController@index');
