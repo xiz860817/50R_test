@@ -40,7 +40,8 @@
                     #取得Date資料表內容  
                     $dates = App\Date::where('employee_id','=',$user->id)->get();
                     foreach($dates as $date){
-                      echo $date;}
+                      echo $date;
+                    }
                     $hours = App\Hours::where('date_id','=',$date->employee_id)->get();
                     foreach($hours as $hour){
                       echo $hour;
@@ -52,7 +53,8 @@
                               'Address'=>$user->Address,
                               'Phone'=>$user->Phone,
                               'Hourlypay'=>$user->Hourlypay, 
-                              'employee_id'=>$date->employee_id])  
+                              'employee_id'=>$date->employee_id,
+                              'date_id'=>$hour->date_id])  
                               }}"
                               class="btn btn-danger btn-sm">刪除</a></td>
                     <?php }  ?>             

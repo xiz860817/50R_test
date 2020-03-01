@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Employee;
 use App\Date;
+use App\Hours;
 use App\Http\Requests\EditEmployee;
 use Illuminate\Http\Request;
 use PhpParser\Node\Expr\Empty_;
@@ -79,11 +80,19 @@ class EmployeeController extends Controller
                         'Phone'=>$request->input('Phone'),
                         'Hourlypay'=>$request->input('Hourlypay')
                         ]);
-        //在這邊寫刪除Date的程式
+        
+        //刪除Date的程式
         $dates = Date::where('employee_id',$request->input('employee_id'))
         ->delete(['id'=>$request->input('id'),
                   'employee_id'=>$request->input('employee_id'),
                   'Date'=>$request->input('Date')]);
+        //刪除Hours的程式
+        $hours = Hours::where('date_id',$request->input('date_id'))
+        ->delete(['id'=>$request->input('id'),
+                  'date_id'=>$request->input('date_id'),
+                  'Hours'=>$request->input('Hours')]);
+
+        //顯示員工資料          
         $employees = Employee::all();
         return View::make('lists',['employees'=>$employees]);
     }
