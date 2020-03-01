@@ -39,14 +39,13 @@
                     foreach($dates as $date){
                       echo $date;
                       ?>
-                    <a href="{{action('DateController@delete', 
-                              ['employee_id'=>$date->employee_id]),
-                              action('EmployeeController@delete', 
+                    <a href="{{action('EmployeeController@delete', 
                               ['id'=>$user->id,
                               'Name'=>$user->Name,
                               'Address'=>$user->Address,
                               'Phone'=>$user->Phone,
-                              'Hourlypay'=>$user->Hourlypay ])  
+                              'Hourlypay'=>$user->Hourlypay, 
+                              'employee_id'=>$date->employee_id])  
                               }}"
                               class="btn btn-danger btn-sm">刪除</a></td>
                     <?php }  ?>             
