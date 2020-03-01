@@ -3,12 +3,12 @@
 <body>
     <!--<button onclick="ThePrompt()">Prompt Box</button>-->
     
-	<span id="hellouser" style="color:blue;"></span>
+	<span id="test" style="color:blue;"></span>
 	<script>
 		
-			var theuser = prompt("Please enter your name", "Nihsiang");
+			var theuser = prompt("Please enter your key", "Nihsiang");
 			if (theuser != null) {
-				document.getElementById("hellouser").innerHTML =
+				document.getElementById("test").innerHTML =
 				"Hello " + theuser + "! ：)";
 			}
 		
