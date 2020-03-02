@@ -16,15 +16,21 @@ class AuthController extends Controller{
   }
 
   public function postLogin(LoginRequest $request){
-    $authData = $request->only([
+    $email = 's0984008299@gmail.com';
+    $password = '1234';
+    if (Auth::attempt(['email' => $email, 'password' => $password]))
+{
+    // 已登入成功！！！
+}
+    /*$authData = $request->only([
       'email','password'
-    ]);
+    ]);*/
 
-    if (Auth::attempt($authData, $request->has('remember'))){
+    /*if (Auth::attempt($authData, $request->has('remember'))){
       return Redirect::action('BoardController@getIndex');
     }else{
       return Redirect::back()->withError(['msg'=> '帳號或密碼輸入錯誤'])->withInput($request->except('password'));
-    }
+    }*/
   }
   public function getLogout(){
     Auth::logout();
