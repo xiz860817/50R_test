@@ -20,6 +20,7 @@ class AuthController extends Controller{
     $password = '1234';
     if (Auth::attempt(['email' => $email, 'password' => $password]))
 {
+  return Redirect::action('BoardController@getIndex');
     // 已登入成功！！！
 }
     /*$authData = $request->only([
