@@ -41,7 +41,7 @@ Route::get('test','DateController@index');
 
 
 Auth::routes();
-Route::get('/', 'HomeController@index')->name('/');
+Route::get('/home', 'HomeController@index')->name('/home');
 
 Route::group(['middleware' => 'auth'], function(){
     Route::get('edit', 'EmployeeController@edit');
