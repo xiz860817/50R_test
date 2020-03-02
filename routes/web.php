@@ -53,5 +53,5 @@ Route::post('login', 'AuthController@postLogin');
 Route::get('logout', 'AuthController@getLogout');
 
 Route::get('register', function () {
-    return view('auth\register');
+    return view('auth/register');
 });
