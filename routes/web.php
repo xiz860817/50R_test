@@ -51,4 +51,4 @@ Route::group(['middleware' => 'auth'], function(){
 Route::get('login', 'AuthController@getLogin');
 Route::post('login', 'AuthController@postLogin');
 Route::get('logout', 'AuthController@getLogout');
-Route::get('create', 'RegisterController@create');
+Route::get('create', 'Auth\RegisterController@create');
