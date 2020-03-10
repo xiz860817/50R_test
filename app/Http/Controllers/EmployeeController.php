@@ -45,13 +45,11 @@ class EmployeeController extends Controller
         return redirect('employee');
     }
 
-    /*public function edit(Request $request){
+    public function edit(Request $request){
         return View::make('edit',['id'=>$request->id ,'Name'=>$request->Name,'Address'=>$request->Address,'Phone'=>$request->Phone,'Hourlypay'=>$request->Hourlypay]);
-    }*/
-    public function edit(){
-        return View::make('edit');
-      }
-    /*public function update($employee_id,EditEmployee $request){
+    }
+
+    public function update($employee_id,EditEmployee $request){
         $employee = EmployeeEloquent::where('employee_id',$employee_id)->firstOrFail();
         $employee->Phone = $request->Phone;
         $employee->save();
@@ -60,7 +58,7 @@ class EmployeeController extends Controller
             'Employee' => $employee,
             'msg' => '修改成功'
         ]);
-    }*/
+    }
     /*public function update(Request $request){
         if ($request->cancel){
             $employees = Employee::all();
@@ -76,17 +74,7 @@ class EmployeeController extends Controller
         $employees = Employee::all();
         return View::make('lists',['employees'=>$employees]);
     }*/
-    public function update(EditRequest $request){
-        $user = Auth::user();
-        $user->Name=$request->Name;
-        $user->customer->Phone=$request->Phone;
-        $user->customer->save();
-        $user->save();
-      
-        return View::make('edit', [
-          'msg' => '修改成功'
-        ]);
-      }
+    
     public function delete(Request $request){
         $employees = Employee::where('id',$request->input('id'))
                         ->delete(['id'=>$request->input('id'),
