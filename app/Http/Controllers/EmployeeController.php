@@ -13,6 +13,10 @@ use Auth;
 class EmployeeController extends Controller
 {
     //
+    public function test(){
+        $date = Employee::first();
+        echo $date->Date;
+    }
     public function index(){
         $employees = Employee::all();
         return View::make('lists',['employees' => $employees]);

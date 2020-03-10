@@ -34,7 +34,7 @@ Route::get('Datedelete','DateController@delete');
 
 //打卡
 Route::get('clockon', function () {
-    return view('clock');
+    return view('clockon');
 });
 //測試
-Route::get('test','DateController@index');
+Route::get('test','EmployeeController@test');
