@@ -12,7 +12,7 @@ class AuthController extends Controller{
   }
 
   public function getLogin(){
-    return View::make('auth\login');
+    return View::make('auth/login');
   }
 
   public function postLogin(LoginRequest $request){
