@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Symfony\Component\VarDumper\Cloner\Data;
 use App\Date;
 use Illuminate\Foundation\Console\Presets\React;
+use View;
 
 class DateController extends Controller
 {

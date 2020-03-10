@@ -38,4 +38,4 @@ Route::get('clockon', function () {
 });
 //測試
 Route::get('test/create','DateController@create');
-Route::post('test','DaeController@store');
+Route::post('test','DateController@store');
