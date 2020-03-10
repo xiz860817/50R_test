@@ -16,9 +16,11 @@ class AuthController extends Controller{
   }
 
   public function postLogin(LoginRequest $request){
+
     $authData = $request->only([
       'email','password'
     ]);
+    echo $authData;
 
     if (Auth::attempt($authData, $request->has('remember'))){
       return Redirect::action('BoardController@getIndex');

@@ -34,24 +34,7 @@ Route::get('Datedelete','DateController@delete');
 
 //打卡
 Route::get('clockon', function () {
-    return view('clockon');
+    return view('clock');
 });
 //測試
 Route::get('test','DateController@index');
-
-
-Auth::routes();
-Route::get('/home', 'HomeController@index')->name('/home');
-
-Route::group(['middleware' => 'auth'], function(){
-    Route::get('edit', 'EmployeeController@edit');
-    Route::post('edit', 'EmployeeController@update');
-  });
-  
-Route::get('login', 'AuthController@getLogin');
-Route::post('login', 'AuthController@postLogin');
-Route::get('logout', 'AuthController@getLogout');
-
-Route::get('register', function () {
-    return view('auth/register');
-});
