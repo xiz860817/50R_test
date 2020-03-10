@@ -11,6 +11,6 @@ class Employee extends Model
     public $timestamps = false;
 
     public function date(){
-        return $this->hasMany('App\Date');
+        return $this->hasMany(Date::class);
     }
 }
