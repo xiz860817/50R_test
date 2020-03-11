@@ -19,7 +19,7 @@ class DateController extends Controller
     }
     public function store(Request $request){
         $request->validate([
-            'title'=>'required|unique:test|max:125',
+            'title'=>'required',
             'body' => 'required'
         ]);
     }
