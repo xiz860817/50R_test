@@ -11,7 +11,7 @@
 |
 */
 
-use App\Http\Controllers\HoursController;
+use Illuminate\Http\Request;
 
 Route::get('/', function () {
     return view('index');
@@ -37,4 +37,9 @@ Route::get('clockon', function () {
     return view('clockon');
 });
 //測試
-Route::get('test','EmployeeController@test');
+Route::get('test',function(){
+    return view('test');
+});
+Route::post('form',function (Request $request){
+    var_dump($request->all());
+});
