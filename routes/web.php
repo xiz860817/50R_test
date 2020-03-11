@@ -41,5 +41,7 @@ Route::get('test',function(){
     return view('test');
 });
 Route::post('form',function (Request $request){
-    var_dump($request->all());
+    if($request->hasFile('profile_picture')){
+        var_dump($request->file('profile_picture'));
+    }
 });
