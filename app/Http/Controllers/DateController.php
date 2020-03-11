@@ -14,7 +14,7 @@ class DateController extends Controller
 
     } 
     public function create(){
-        return view('test.create');
+        return view('test');
     }
     public function store(Request $request){
         $request->validate([
