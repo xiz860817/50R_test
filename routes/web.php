@@ -37,11 +37,5 @@ Route::get('clockon', function () {
     return view('clockon');
 });
 //測試
-Route::get('test',function(){
-    return view('test');
-});
-Route::post('form',function (Request $request){
-    if($request->hasFile('profile_picture')){
-        var_dump($request->file('profile_picture'));
-    }
-});
+Route::get('test/create','DateController@create');
+Route::post('test','DaeController@store');

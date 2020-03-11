@@ -5,15 +5,27 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Symfony\Component\VarDumper\Cloner\Data;
 use App\Date;
+use Illuminate\Foundation\Console\Presets\React;
 
 class DateController extends Controller
 {
     //
-    public function index(){ $a=new Date(); 
+    public function index(){
+
+    } 
+    public function create(){
+        return view('test.create');
+    }
+    public function store(Request $request){
+        $request->validate([
+            'title'=>'test123|max:125',
+            'body' => 'required'
+        ]);
+    }
         //$dates = Date::all();
         //echo $dates;
 
-        }
+        
         //回找employee的Name
         /*$name = Date::find(1);
         echo $name->employee->Name;
