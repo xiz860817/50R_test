@@ -1,4 +1,4 @@
-<form action="{{ action('form') }}" method="post" enctype="multipart/form-data">
+<form action='form' method="post" enctype="multipart/form-data">
     @csrf
     <input type="test" name="name">
     <input type="file" name="profile_picture">
