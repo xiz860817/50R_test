@@ -15,13 +15,12 @@ class DateController extends Controller
 
     } 
     public function create(){
-        return view('test');
+return redirect('test');
+      
     }
-    public function store(Request $request){
-        $request->validate([
-            'title'=>'required',
-            'body' => 'required'
-        ]);
+    public function store(){
+echo back();       
+echo "store";
     }
         //$dates = Date::all();
         //echo $dates;
