@@ -19,7 +19,7 @@ class EmployeeController extends Controller
     }
     public function index(){
         $employees = Employee::all();
-        return View::make('lists',['employees' => $employees]);
+        return View('lists',['employees' => $employees]);
         /*$emps = Employee::all();
         echo $emps;
 

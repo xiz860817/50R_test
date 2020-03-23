@@ -18,7 +18,9 @@ Route::get('/', function () {
 });
 
 Route::fallback(function(){
-    return "網站輸入錯誤";
+$now = now();
+echo $now;
+return "網站輸入錯誤";
 });
 
 //員工新增刪除顯示資料
@@ -42,4 +44,4 @@ Route::get('clockon', function () {
 });
 //測試
 Route::get('test/create','DateController@create');
-Route::post('test','DateController@store');
+Route::get('test','DateController@store');
