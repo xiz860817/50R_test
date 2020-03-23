@@ -17,17 +17,6 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::fallback(function(){
-<<<<<<< HEAD
-    now();
-    return "網站輸入錯誤";
-=======
-$now = now();
-echo $now;
-return "網站輸入錯誤";
->>>>>>> 9c63d4b2254aa9090b1f62c2b23568d2aff41cbb
-});
-
 //員工新增刪除顯示資料
 Route::get('employee','EmployeeController@index');
 Route::get('new', 'EmployeeController@new');

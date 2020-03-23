@@ -19,8 +19,9 @@ return redirect('test');
       
     }
     public function store(){
-echo back();       
-echo "store";
+
+        $a=[{"id"=1}];
+        echo $a;
     }
         //$dates = Date::all();
         //echo $dates;
