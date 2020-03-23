@@ -18,6 +18,7 @@ Route::get('/', function () {
 });
 
 Route::fallback(function(){
+    now();
     return "網站輸入錯誤";
 });
 
