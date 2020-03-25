@@ -17,7 +17,7 @@ Route::get('/', function () {
 });
 
 Route::get('register', function () {
-    return view('auth.register');
+    return view('index');
 });
 
 //Route::get('register','Auth\RegisterController@showRegistrationForm')->name('register');
