@@ -19,9 +19,10 @@ return redirect('test');
       
     }
     public function store(){
-
-        $a=[{"id"=1}];
-        echo $a;
+        $dates = Date::all();
+        echo $dates;
+        
+        
     }
         //$dates = Date::all();
         //echo $dates;
