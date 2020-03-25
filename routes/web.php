@@ -18,7 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 //登入才能看的畫面
-Route::get('login','Auth\LoginController@geyLogin')->middleware('guest');
+Route::get('login','Auth\LoginController@getLogin')->middleware('guest');
 
 //需要登入才能進入的頁面
 Route::middleware('auth')->group(function(){
