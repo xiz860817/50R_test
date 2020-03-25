@@ -12,9 +12,11 @@
 */
 
 
-Route::get('/', function () {
+Route::get('/home', function () {
     return view('index');
 });
+
+
 
 Route::get('register','Auth\RegisterController@showRegistrationForm')->name('register');
 Route::post('register','Auth\RegisterController@register');
