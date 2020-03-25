@@ -16,6 +16,13 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('login','Auth\LoginController@geyLogin')->middeware('guest');
+
+Route::middleware('auth')->group(function(){
+
+    Route::get('employee','EmployeeController@index');
+});
+
 Auth::routes();
 
 //Route::get('register','Auth\RegisterController@showRegistrationForm')->name('register');
@@ -23,7 +30,7 @@ Auth::routes();
 //員工新增刪除顯示資料
 
 
-Route::get('employee','EmployeeController@index');
+//Route::get('employee','EmployeeController@index');
 Route::get('new', 'EmployeeController@new');
 Route::post('store','EmployeeController@store');
 Route::get('edit','EmployeeController@edit');
