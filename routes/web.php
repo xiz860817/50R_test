@@ -16,7 +16,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('login','Auth\LoginController@geyLogin')->middeware('guest');
+Route::get('login','Auth\LoginController@geyLogin')->middleware('guest');
 
 Route::middleware('auth')->group(function(){
 
