@@ -19,16 +19,13 @@ return redirect('test');
       
     }
     public function store(){
-<<<<<<< HEAD
 
-        $dates=Date::all();
-	echo $dates->get();
-=======
-        $dates = Date::all();
-        echo $dates;
+        //$dates=Date::all();
+
+    
+        //$dates = Date::all();
+        //echo $dates;
         
-        
->>>>>>> 7b4577354e4fbd998287e88d09d75ef59bd1d49b
     }
         //$dates = Date::all();
         //echo $dates;
