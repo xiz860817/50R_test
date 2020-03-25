@@ -16,8 +16,8 @@ Route::get('/', function () {
     return view('index');
 });
 
-Auth::routes();
-
+Route::get('register','Auth\RegisterController@showRegistrationForm')->name('register');
+Route::post('register','Auth\RegisterController@register');
 //員工新增刪除顯示資料
 Route::get('employee','EmployeeController@index');
 Route::get('new', 'EmployeeController@new');
