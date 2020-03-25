@@ -18,7 +18,7 @@
   </div>  
   <ul class="nav justify-content-end">
       <li class="nav-item">
-        <a class="nav-link" href="login">打卡</a>
+        <a class="nav-link" href="login">登入</a>
       </li>
     </ul>
 </nav>
