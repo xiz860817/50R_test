@@ -44,3 +44,7 @@ Route::get('clockon', function () {
 //測試
 Route::get('test/create','DateController@create');
 Route::get('test','DateController@store');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
